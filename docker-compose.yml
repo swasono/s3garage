@@ -1,0 +1,13 @@
+services:
+  garage:
+    image: dxflrs/garage:v2.1.0
+    restart: always
+    ports:
+      - 3900:3900
+      - 3901:3901
+      - 3902:3902
+      - 3903:3903
+    volumes:
+      - ./data/garage.toml:/etc/garage.toml
+      - ./data/meta:/var/lib/garage/meta
+      - ./data/data:/var/lib/garage/data
