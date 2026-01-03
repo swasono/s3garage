@@ -8,6 +8,6 @@ services:
       - 3902:3902
       - 3903:3903
     volumes:
-      - ./data/garage.toml:/etc/garage.toml
-      - ./data/meta:/var/lib/garage/meta
-      - ./data/data:/var/lib/garage/data
+      - ../home/galih/_data/garage.toml:/etc/garage.toml
+      - ../home/galih/_data/meta:/var/lib/garage/meta
+      - ../home/galih/_data/data:/var/lib/garage/data
