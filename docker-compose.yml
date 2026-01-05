@@ -9,5 +9,5 @@ services:
       - 3903:3903
     volumes:
       - ./data/garage.toml:/etc/garage.toml
-      #- ../home/galih/_data/meta:/var/lib/garage/meta
-      #- ../home/galih/_data/data:/var/lib/garage/data
+      - ./data/meta:/var/lib/garage/meta
+      - ./data/data:/var/lib/garage/data
